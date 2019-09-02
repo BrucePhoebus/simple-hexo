@@ -5,15 +5,15 @@
 # Site
 title: Hexo
 subtitle:
-description:
+description: 每天学点前端技术点
 keywords:
-author: John Doe
-language: en
+author: Phoebus Zheng
+language: zh
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://brucephoebus.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -43,7 +43,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -52,7 +52,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
