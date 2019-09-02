@@ -41,3 +41,9 @@ hexo deploy
 ```
 
 > 此部署发布是运行`_config.yml`文件进行项目服务器推送的
+
+## 项目在线地址
+
+```bash
+https://brucephoebus.github.io
+```
