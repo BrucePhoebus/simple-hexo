@@ -47,3 +47,9 @@ hexo deploy
 ```bash
 https://brucephoebus.github.io
 ```
+
+## hexo炫酷配置参考
+
+```bash
+http://shenzekun.cn/hexo的next主题个性化配置教程.html
+```
