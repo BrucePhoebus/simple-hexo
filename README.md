@@ -53,3 +53,18 @@ https://brucephoebus.github.io
 ```bash
 http://shenzekun.cn/hexo的next主题个性化配置教程.html
 ```
+
+## 开发说明
+
+* 使用dev分支进行开发，然后本地合并到master分支进行部署提交
+
+```bash
+git push origin dev
+git checkout master
+git merge dev
+npm run deploy
+```
+
+* master分支是打包部署后的文件，没有项目原代码，master不能进行`pull`或`push`(会有严重冲突)
+
+> 执行完`npm run deploy`就可以从[在线地址](https://brucephoebus.github.io)看到最新效果了
