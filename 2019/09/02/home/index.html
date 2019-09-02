@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="该项目是使用hexo技术构建自己的博客项目 项目构建 该项目是参考该文章构建完成的，可以参考这样构建  1http://www.conardli.top/blog/article/博客搭建/【博客搭建】个人博客搭建及配置.html#_1-4-部署上传  平时部署上传操作1234567npm install hexo-deployer-git --save    # 本地安装上传工具hexo cle">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-09-02T09:24:31.987Z">
+<meta property="og:updated_time" content="2019-09-02T10:39:17.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="项目首页">
 <meta name="twitter:description" content="该项目是使用hexo技术构建自己的博客项目 项目构建 该项目是参考该文章构建完成的，可以参考这样构建  1http://www.conardli.top/blog/article/博客搭建/【博客搭建】个人博客搭建及配置.html#_1-4-部署上传  平时部署上传操作1234567npm install hexo-deployer-git --save    # 本地安装上传工具hexo cle">
@@ -22,12 +22,29 @@
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/images/favicon.ico">
   
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/css/style.css">
+
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+  <style>
+    .pace .pace-progress {
+      background: #1E92FB; /*进度条颜色*/
+      height: 3px;
+    }
+    .pace .pace-progress-inner {
+      box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+      border-top-color: #1E92FB;    /*上边框颜色*/
+      border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+  </style>
 </head>
 </html>
 <body>
@@ -64,9 +81,7 @@
   </div>
 </header>
         <div class="outer">
-<!--            {% if (theme.canvas_nest) { %}-->
-<!--            <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>-->
-<!--            {% } %}-->
+            <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
             <a href="https://github.com/BrucePhoebus/BrucePhoebus.github.io" class="github-corner" aria-label="View source on GitHub" target="_blank">
                 <svg width="80" height="80" viewBox="0 0 250 250"
                      style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
@@ -103,6 +118,9 @@
                         animation: octocat-wave 560ms ease-in-out
                     }
                 }</style>
+            <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+            <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+            <script type="text/javascript" src="../source/js/fireworks.js"></script>
             <section id="main"><article id="post-home" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/09/02/home/" class="article-date">
@@ -148,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://brucephoebus.github.io/2019/09/02/home/" data-id="ck026ekwj00000kg1vvrhr3xb" class="article-share-link">Share</a>
+      <a data-url="https://brucephoebus.github.io/2019/09/02/home/" data-id="ck029xn72000094g1syn1c4d3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -219,13 +237,14 @@
             &copy; 2019 Phoebus Zheng<br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
         </div>
-    </div>
-    <div class="powered-by">
-        <i class="fa fa-user-md"></i>
-        <span id="busuanzi_container_site_uv">
-            本站访客数:<span id="busuanzi_value_site_pv"></span>
+        <div class="powered-by">
+            <i class="fa fa-user-md"></i>
+            <span id="busuanzi_container_site_uv">
+            本站访客数:<span id="busuanzi_value_site_uv"></span>
         </span>
+        </div>
     </div>
+
     <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </footer>
 
