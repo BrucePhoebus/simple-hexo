@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description: 每天学点前端技术点
-keywords:
-author: Phoebus Zheng
+title: Phoebus的日记
+subtitle: 我的日志
+description: 日志
+keywords: 日志,个人,生活
+author: Phoebus
 language: zh
 timezone:
 
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: concise
 
 plugins: hexo-generate-feed
 
